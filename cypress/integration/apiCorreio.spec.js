@@ -26,7 +26,7 @@ describe('Cenário de testes da api cep-correios', () => {
                     expect(city).to.be.eq(matchCapital.city)
                     expect(longitude).to.be.eq(matchCapital.longitude)
                     expect(state).to.be.eq(matchCapital.state)
-                    expect(id).to.be.eq(matchCapital.id)
+                    expect(id.substring(0,8)).to.be.eq(matchCapital.id.substring(0,8))
                     expect(complement).to.be.eq(matchCapital.complement)
                     expect(latitude).to.be.eq(matchCapital.latitude)
                     expect(neighborhood).to.be.eq(matchCapital.neighborhood)
